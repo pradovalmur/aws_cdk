@@ -11,6 +11,5 @@ class S3Stack(core.Stack):
         s3.Bucket(
             self,
             'meu-bucket-prado-cdk',
-            bucket_name='meu-bucket-prado-com-aws-cdk',
-            encryption='Enabled'
+            bucket_name='meu-bucket-prado-com-aws-cdk'
         )
