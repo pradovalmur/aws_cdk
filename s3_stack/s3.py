@@ -9,6 +9,6 @@ class S3Stack(core.Stack):
         super().__init__(scope, id, **kwargs)
         s3.Bucket(
             self,
-            'Bucket-prado001',
-            bucket_name='Bucket-prado001'
+            'bucket-prado001',
+            bucket_name='bucket-prado001-com-cdk'
         )
