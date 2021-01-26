@@ -6,10 +6,10 @@ from aws_cdk import (
 
 class S3Stack(core.Stack):
 
-    def _init_(self, scope: core.Construct, id: str, **kwargs) -> None:
+    def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
         s3.Bucket(
             self,
-            'bucket-prado001',
-            bucket_name='bucket-prado001-com-cdk'
+            'meu-bucket-prado-cdk',
+            bucket_name='meu-bucket-prado-com-aws-cdk'
         )

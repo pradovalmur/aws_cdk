@@ -6,7 +6,7 @@ with open("README.md") as fp:
 
 
 setuptools.setup(
-    name="s3Stack",
+    name="s3_stack",
     version="0.0.1",
 
     description="An empty CDK Python app",
@@ -15,11 +15,11 @@ setuptools.setup(
 
     author="author",
 
-    package_dir={"": "s3Stack"},
-    packages=setuptools.find_packages(where="s3Stack"),
+    package_dir={"": "s3_stack"},
+    packages=setuptools.find_packages(where="s3_stack"),
 
     install_requires=[
-        "aws-cdk.core==1.86.0",
+        "aws-cdk.core==1.85.0",
     ],
 
     python_requires=">=3.6",
